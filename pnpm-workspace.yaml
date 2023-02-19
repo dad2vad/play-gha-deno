@@ -1,0 +1,7 @@
+packages:
+  - core
+  - playground
+  - deno
+  - deno/packages/*
+  - apps/*
+  - packages/*

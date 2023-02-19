@@ -1,0 +1,29 @@
+{
+  "module": "./esm/deno-pkg/mod.js",
+  "main": "./script/deno-pkg/mod.js",
+  "types": "./types/deno-pkg/mod.d.ts",
+  "name": "@internal/deno-pkg-node",
+  "version": "1.0.0",
+  "description": "internal",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./types/deno-pkg/mod.d.ts",
+        "default": "./esm/deno-pkg/mod.js"
+      },
+      "require": {
+        "types": "./types/deno-pkg/mod.d.ts",
+        "default": "./script/deno-pkg/mod.js"
+      }
+    }
+  },
+  "scripts": {
+    "test": "node test_runner.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "chalk": "^4.1.2",
+    "@deno/shim-deno": "~0.12.0"
+  }
+}

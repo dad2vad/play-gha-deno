@@ -1,0 +1,13 @@
+{
+  "name": "@internal/deno",
+ 
+  "version": "0.0.1",
+
+  "description": "root",
+  "scripts": {
+    "build": "pnpm dlx deno-bin run -A dnt.ts",
+    "test": "pnpm dlx deno-bin test --ignore=packages"
+  },
+
+  "license": "MIT"
+}

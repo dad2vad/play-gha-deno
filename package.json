@@ -1,0 +1,27 @@
+{
+  "name": "play-gha2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@7.29.0",
+  "scripts": {
+    "preinstall": "cd deno && pnpm dlx deno-bin run -A dnt.ts",
+    "build:ci": "turbo run build --cache-dir='.turbo'",
+   
+    "format": "pnpm dlx deno-bin fmt -c deno.jsonc",
+    "lint": "pnpm dlx deno-bin lint -c deno.jsonc",
+    "typecheck": "turbo run typecheck",
+    "build": "turbo run build",
+    "test": "turbo run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "latest",
+    "turbo": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}
